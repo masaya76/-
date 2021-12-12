@@ -1,0 +1,28 @@
+<canvas id="myChart"></canvas>
+<script>
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels: ["Kaori", "Karasa", "Nodogoshi", "Nomiyasusa"],
+    datasets: [{
+      backgroundColor: "rgba(0,0,80,0.4)",
+      borderColor: "rgba(0,0,80,1)",
+      data: <%= @data %>
+    }]
+  },
+  options: {
+      legend: {
+          display: false
+      },
+      scale: {
+          ticks: {
+              scaleBeginAtZero: true,
+              min: 0,
+              max: 5,
+              stepSize: 1
+          }
+      }
+  }
+});
+</script>
