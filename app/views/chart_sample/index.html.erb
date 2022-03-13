@@ -6,15 +6,13 @@ var myChart = new Chart(ctx, {
   data: {
     labels: ["Kaori", "Karasa", "Nodogoshi", "Nomiyasusa"],
     datasets: [{
+      label: 'Beer',
       backgroundColor: "rgba(0,0,80,0.4)",
       borderColor: "rgba(0,0,80,1)",
-      data: <%= @data %>
+      data: [1, 2, 3, 5]
     }]
   },
   options: {
-      legend: {
-          display: false
-      },
       scale: {
           ticks: {
               scaleBeginAtZero: true,

@@ -68,3 +68,5 @@ gem 'jcanvas-rails', '~> 0.1.0'
 
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
+
+gem 'carrierwave' #carrierwaveとは、Railsアプリケーションから画像アップロード機能を簡単に実装できるライブラリ
